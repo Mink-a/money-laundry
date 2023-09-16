@@ -13,7 +13,7 @@ import Link from "next/link";
 
 function ThreeFeatures() {
   return (
-    <section className='max-w-screen-xl px-4 py-8 mx-auto flex flex-col items-center lg:flex-row lg:justify-between lg:gap-3'>
+    <section className='max-w-screen-xl px-4 py-8 -mt-32 mx-auto flex flex-col items-center lg:flex-row lg:justify-between lg:gap-3'>
       <Card className='w-full lg:w-[400px] mb-3'>
         <CardHeader>
           <CircuitBoardIcon />

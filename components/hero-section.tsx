@@ -7,7 +7,7 @@ import Link from "next/link";
 function HeroSection() {
   return (
     <section className='bg-gradient-to-l from-[#ebf7fb] to-[#fafdfe] dark:bg-gray-900'>
-      <section className='max-w-screen-xl px-4 py-8 mx-auto grid lg:grid-cols-12 gap-5 lg:gap-0'>
+      <div className='max-w-screen-xl px-4 pt-8 pb-48 mx-auto grid lg:grid-cols-12 gap-5 lg:gap-0'>
         <div className='lg:col-span-5'>
           <h1 className='max-w-xl mb-4 text-2xl font-semibold leading-tight md:leading-snug xl:leading-snug md:text-3xl xl:text-4xl dark:text-white'>
             Optima Compass anti money laundering technology and services
@@ -30,7 +30,7 @@ function HeroSection() {
             alt='hero image'
           />
         </div>
-      </section>
+      </div>
     </section>
   );
 }
