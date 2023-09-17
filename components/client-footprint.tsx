@@ -8,7 +8,7 @@ import { Separator } from "./ui/separator";
 
 function ClientFootprint() {
   return (
-    <section className='max-w-screen-xl px-4 py-8 mx-auto space-y-10'>
+    <section className='max-w-screen-xl px-4 py-20 mx-auto space-y-10'>
       <div className='max-w-2xl mx-auto text-center'>
         <h1 className='mb-4 text-2xl font-semibold leading-tight md:leading-snug xl:leading-snug md:text-3xl xl:text-4xl dark:text-white'>
           Our Clients and Footprint
@@ -23,11 +23,11 @@ function ClientFootprint() {
       <div className='grid lg:grid-cols-4 gap-4'>
         <Card className='w-full mb-3 border-0 shadow-lg h-fit'>
           <Image
-            className='bg-blue-400 rounded-t-lg'
-            src='/hero-img.png'
-            width={650}
-            height={470}
-            alt='hero image'
+            className='bg-[#FFEFD8] rounded-t-lg w-full p-7 h-56'
+            src='/north-america.png'
+            width={150}
+            height={100}
+            alt='north image'
           />
           <CardHeader className='py-4'>
             <h4 className='font-semibold text-xl mb-2'>AML Technology</h4>
@@ -44,11 +44,11 @@ function ClientFootprint() {
         </Card>
         <Card className='w-full mb-3 border-0 shadow-lg h-fit'>
           <Image
-            className='bg-blue-400 rounded-t-lg'
-            src='/hero-img.png'
-            width={650}
-            height={470}
-            alt='hero image'
+            className='bg-[#F2FBFF] rounded-t-lg w-full h-56 p-7 px-20'
+            src='/central.png'
+            width={150}
+            height={100}
+            alt='central image'
           />
           <CardHeader className='py-4'>
             <h4 className='font-semibold text-xl mb-2'>
@@ -70,11 +70,11 @@ function ClientFootprint() {
         </Card>
         <Card className='w-full mb-3 border-0 shadow-lg h-fit'>
           <Image
-            className='bg-blue-400 rounded-t-lg'
-            src='/hero-img.png'
-            width={650}
-            height={470}
-            alt='hero image'
+            className='bg-[#FCEBFF] rounded-t-lg w-full p-7 h-56'
+            src='/europe.png'
+            width={150}
+            height={100}
+            alt='europe image'
           />
           <CardHeader className='py-4'>
             <h4 className='font-semibold text-xl mb-2'>Europe &amp; Africa</h4>
@@ -91,11 +91,11 @@ function ClientFootprint() {
         </Card>
         <Card className='w-full mb-3 border-0 shadow-lg h-fit'>
           <Image
-            className='bg-blue-400 rounded-t-lg'
-            src='/hero-img.png'
-            width={650}
-            height={470}
-            alt='hero image'
+            className='bg-[#E1F6EF] rounded-t-lg w-full p-7 h-56'
+            src='/middle.png'
+            width={150}
+            height={100}
+            alt='middle image'
           />
           <CardHeader className='py-4'>
             <h4 className='font-semibold text-xl mb-2'>
