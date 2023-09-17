@@ -18,7 +18,7 @@ function HeroSection() {
             with a long established lagecy of leadership.
           </p>
           <Link href='#' className={buttonVariants({ variant: "default" })}>
-            Speak to Sales
+            Get Started
             <MoveRight className='ml-2 h-4 w-4' />
           </Link>
         </div>

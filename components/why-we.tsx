@@ -30,7 +30,7 @@ function WhyWe() {
           convallis posuere morbi leo urna. Fusce id velit ut tortor.
         </p>
         <Link href='#' className={buttonVariants({ variant: "default" })}>
-          Speak to Sales
+          Learn More
           <MoveRight className='ml-2 h-4 w-4' />
         </Link>
       </div>

@@ -42,18 +42,18 @@ function Footer() {
           </div>
           <div className='grid grid-cols-2 gap-8 lg:gap-20 lg:grid-cols-3'>
             <div>
-              <h2 className='mb-6 text-sm font-semibold text-white uppercase dark:text-white'>
+              <h2 className='mb-6 font-semibold text-white text-lg dark:text-white'>
                 Quick Links
               </h2>
               <ul className='text-white dark:text-gray-400 font-medium'>
                 <li className='mb-4'>
-                  <a href='https://flowbite.com/' className='hover:underline'>
+                  <a href='/' className='hover:underline'>
                     Home
                   </a>
                 </li>
                 <li className='mb-4'>
                   <a
-                    href='https://tailwindcss.com/'
+                    href='#'
                     className='hover:underline'
                   >
                     Services
@@ -61,7 +61,7 @@ function Footer() {
                 </li>
                 <li className='mb-4'>
                   <a
-                    href='https://tailwindcss.com/'
+                    href='#'
                     className='hover:underline'
                   >
                     AML Technology
@@ -69,7 +69,7 @@ function Footer() {
                 </li>
                 <li className='mb-4'>
                   <a
-                    href='https://tailwindcss.com/'
+                    href='#'
                     className='hover:underline'
                   >
                     Crypto Currencies
@@ -78,13 +78,13 @@ function Footer() {
               </ul>
             </div>
             <div>
-              <h2 className='mb-6 text-sm font-semibold text-white uppercase dark:text-white'>
+              <h2 className='mb-6 font-semibold text-white text-lg dark:text-white'>
                 Resources
               </h2>
               <ul className='text-white dark:text-gray-400 font-medium'>
                 <li className='mb-4'>
                   <a
-                    href='https://github.com/themesberg/flowbite'
+                    href='#'
                     className='hover:underline '
                   >
                     Contact
@@ -92,7 +92,7 @@ function Footer() {
                 </li>
                 <li className='mb-4'>
                   <a
-                    href='https://github.com/themesberg/flowbite'
+                    href='#'
                     className='hover:underline '
                   >
                     About Us
@@ -100,7 +100,7 @@ function Footer() {
                 </li>
                 <li className='mb-4'>
                   <a
-                    href='https://github.com/themesberg/flowbite'
+                    href='#'
                     className='hover:underline '
                   >
                     Client Support
@@ -108,7 +108,7 @@ function Footer() {
                 </li>
                 <li className='mb-4'>
                   <a
-                    href='https://github.com/themesberg/flowbite'
+                    href='#'
                     className='hover:underline '
                   >
                     Optima Alerts
@@ -117,7 +117,7 @@ function Footer() {
               </ul>
             </div>
             <div>
-              <h2 className='mb-6 text-sm font-semibold text-white uppercase dark:text-white'>
+              <h2 className='mb-6 font-semibold text-white text-lg dark:text-white'>
                 About Us
               </h2>
               <ul className='text-white dark:text-gray-400 font-medium'>
