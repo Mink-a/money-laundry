@@ -16,8 +16,8 @@ function ClientFootprint() {
         <p className='leading-loose mb-3'>
           Rhoncus mattis rhoncus urna neque viverra justo nec. Magna etiam
           tempor orci eu. Praesent semper feugiat nibh sed pulvinar proin
-          gravida hendrerit lectus. Cicero&apos;s De Finibus Bonorum et Malorum for
-          use in a type specimen book.
+          gravida hendrerit lectus. Cicero&apos;s De Finibus Bonorum et Malorum
+          for use in a type specimen book.
         </p>
       </div>
       <div className='grid lg:grid-cols-4 gap-4'>
@@ -35,10 +35,10 @@ function ClientFootprint() {
           </CardHeader>
           <CardContent>
             <ul>
-              <li>one</li>
-              <li>two</li>
-              <li>three</li>
-              <li>four</li>
+              <li>United States</li>
+              <li>Mexico</li>
+              <li>Dominican Republic</li>
+              <li>Jamaica</li>
             </ul>
           </CardContent>
         </Card>
@@ -58,13 +58,15 @@ function ClientFootprint() {
           </CardHeader>
           <CardContent>
             <ul>
-              <li>one</li>
-              <li>two</li>
-              <li>three</li>
-              <li>four</li>
-              <li>five</li>
-              <li>six</li>
-              <li>seven</li>
+              <li>Costa Rica</li>
+              <li>El Salvador</li>
+              <li>Panama</li>
+              <li>Venezuela</li>
+              <li>Ecuador</li>
+              <li>Chile</li>
+              <li>Argentina</li>
+              <li>Colombia</li>
+              <li>Uruguay</li>
             </ul>
           </CardContent>
         </Card>
@@ -82,10 +84,13 @@ function ClientFootprint() {
           </CardHeader>
           <CardContent>
             <ul>
-              <li>one</li>
-              <li>two</li>
-              <li>three</li>
-              <li>four</li>
+              <li>United Kingdom</li>
+              <li>Spain</li>
+              <li>Bulgaria</li>
+              <li>Ethiopia</li>
+              <li>Somalia</li>
+              <li>Cote de Ivory</li>
+              <li>Djibouti</li>
             </ul>
           </CardContent>
         </Card>
@@ -105,12 +110,10 @@ function ClientFootprint() {
           </CardHeader>
           <CardContent>
             <ul>
-              <li>one</li>
-              <li>two</li>
-              <li>three</li>
-              <li>four</li>
-              <li>five</li>
-              <li>six</li>
+              <li>Israel</li>
+              <li>Saudi Arabia</li>
+              <li>Dubai</li>
+              <li>Philippines</li>
             </ul>
           </CardContent>
         </Card>
