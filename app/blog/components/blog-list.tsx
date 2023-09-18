@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import RecentPost from "./recent-post";
 import TagsBox from "./tags-box";
 import LatestBlogs from "./latest-blog";
+import Categories from "./categories";
 
 function BlogList() {
   return (
@@ -23,8 +24,7 @@ function BlogList() {
               Categories
             </CardHeader>
             <CardContent className='bg-white'>
-              <p className='pt-3'>Alerts</p>
-              <p className='pt-3'>Company News</p>
+              <Categories />
             </CardContent>
           </Card>
           <Card className='bg-slate-100'>

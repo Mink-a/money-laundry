@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import RecentPost from "../components/recent-post";
 import TagsBox from "../components/tags-box";
 import RelatedPosts from "./components/related-posts";
+import Categories from "../components/categories";
 
 function BlogPage({ params }: { params: { id: string } }) {
   return (
@@ -25,8 +26,7 @@ function BlogPage({ params }: { params: { id: string } }) {
                 Categories
               </CardHeader>
               <CardContent className='bg-white'>
-                <p className='pt-3'>Alerts</p>
-                <p className='pt-3'>Company News</p>
+                <Categories />
               </CardContent>
             </Card>
             <Card className='bg-slate-100'>
