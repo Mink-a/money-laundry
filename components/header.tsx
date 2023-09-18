@@ -13,7 +13,7 @@ function Header() {
   const pathname = usePathname();
   return (
     <header className=''>
-      <div className='bg-[#DFF6FF] text-sm'>
+      <div className='bg-[#DFF6FF] text-sm hidden md:block'>
         <div className='max-w-screen-xl mx-auto flex flex-col md:flex-row text-left md:items-center justify-between p-2 '>
           <p>+959 7980 65880</p>
           <p>UPDATES – Click Here for KBZ Money News Alerts – UPDATES</p>
