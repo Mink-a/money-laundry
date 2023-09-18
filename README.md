@@ -21,3 +21,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - TailwindCss
 - ReactQuery
 
+## Provided API
+
+[https://6p5gy6-4000.csb.app/posts](https://6p5gy6-4000.csb.app/posts) moked with json-srever
+
