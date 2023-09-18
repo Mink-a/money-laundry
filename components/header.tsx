@@ -25,9 +25,9 @@ function Header() {
           <a href='/' className='flex items-center'>
             <Image
               height={50}
-              width={50}
+              width={150}
               src='/comp-logo.png'
-              className='h-8 mr-3'
+              className='w-full mr-3'
               alt='Comp Logo'
             />
           </a>

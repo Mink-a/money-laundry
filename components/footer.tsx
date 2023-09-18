@@ -18,10 +18,10 @@ function Footer() {
           <div className='mb-6 md:mb-0'>
             <a href='/' className='inline-flex items-center mb-6'>
               <Image
-                width={50}
+                width={150}
                 height={50}
                 src='/comp-logo.png'
-                className='h-8 mr-3 mix-blend-lighten'
+                className='w-full mr-3'
                 alt='Company Logo'
               />
             </a>
