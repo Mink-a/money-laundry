@@ -14,10 +14,10 @@ function BlogList() {
         Latest News
       </h1>
       <div className=' grid grid-cols-3'>
-        <div className='space-y-10 col-span-2'>
+        <div className='space-y-10 col-span-3 md:col-span-2'>
           <LatestBlogs />
         </div>
-        <div className='col-span-1 hidden md:block space-y-7'>
+        <div className='col-span-1 ml-4 hidden md:block space-y-7'>
           <Input placeholder='Search Here' className='text-base h-12' />
           <Card className='bg-slate-100'>
             <CardHeader className='text-xl font-semibold py-3'>
