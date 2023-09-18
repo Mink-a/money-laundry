@@ -1,5 +1,6 @@
 import ThreeFeatures from "@/components/3-features";
 import BlogAlerts from "@/components/blog-alerts";
+import ProductCarousel from "@/components/carousel";
 import ChallengeSection from "@/components/challenges-section";
 import ClientFootprint from "@/components/client-footprint";
 import CompasPlatform from "@/components/compas-platform";

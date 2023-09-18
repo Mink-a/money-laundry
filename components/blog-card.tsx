@@ -17,7 +17,7 @@ interface BlogCardProps {
 function BlogCard({ imageUrl, title, author, date, body, id }: BlogCardProps) {
   return (
     <div>
-      <Card className='w-full lg:w-[400px] mb-3 border-0 shadow-lg h-fit'>
+      <Card className='w-full lg:w-[400px] mb-3 border-0 shadow-md h-fit'>
         <Image
           className='bg-blue-400 rounded-t-lg w-full'
           src={imageUrl}

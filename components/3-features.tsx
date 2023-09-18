@@ -15,7 +15,7 @@ import Image from "next/image";
 function ThreeFeatures() {
   return (
     <section className='max-w-screen-xl px-4 py-8 -mt-32 mx-auto flex flex-col items-center lg:flex-row lg:justify-between lg:gap-3'>
-      <Card className='w-full lg:w-[400px] mb-3 bg-blue-500 text-white'>
+      <Card className='w-full lg:w-[400px] mb-3 bg-[#015EB9] text-white'>
         <CardHeader>
           <Image className="" src="/feat-1.png" height={50} width={50} alt="feat one" />
         </CardHeader>

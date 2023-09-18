@@ -3,7 +3,7 @@ import React from "react";
 
 function OurSolution() {
   return (
-    <section className='w-full bg-[#063A78] text-white'>
+    <section className='relative w-full bg-[#063A78] text-white'>
       <div className='max-w-screen-xl px-4 py-20 mx-auto grid lg:grid-cols-12 gap-5 lg:gap-0'>
         <div className='lg:col-span-5'>
           <h1 className='max-w-xl mb-4 text-2xl font-semibold leading-tight md:leading-snug xl:leading-snug md:text-3xl xl:text-4xl dark:text-white'>
@@ -34,6 +34,10 @@ function OurSolution() {
           />
         </div>
       </div>
+      <div className="absolute hidden lg:block bg-no-repeat bottom-0 left-0 bg-[left_2rem_top_2rem] bg-[url('/extra-1.png')] w-full h-full"></div>
+      <div className="absolute hidden lg:block bg-no-repeat bottom-0 left-0 bg-[left_0_bottom_2rem] bg-[url('/extra-2.png')] w-full h-full"></div>
+      <div className="absolute hidden lg:block bg-no-repeat bottom-0 left-0 bg-[right_0_top_2rem] bg-[url('/extra-3.png')] w-full h-full"></div>
+      <div className="absolute hidden lg:block bg-no-repeat bottom-0 left-0 bg-[right_2rem_bottom_2rem] bg-[url('/extra-4.png')] w-full h-full"></div>
     </section>
   );
 }

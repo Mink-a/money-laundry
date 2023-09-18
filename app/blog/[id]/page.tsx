@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import Blog from "./components/blog";
 import Header from "@/components/header";
@@ -6,31 +5,19 @@ import Title from "../components/title";
 import Footer from "@/components/footer";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button, buttonVariants } from "@/components/ui/button";
-import BlogAlerts from "@/components/blog-alerts";
-import Link from "next/link";
-import { MoveRight } from "lucide-react";
-import BlogCard from "@/components/blog-card";
-import { useQuery } from "@tanstack/react-query";
-import { getPostById, getPosts } from "@/lib/api";
-import format from "date-fns/format";
+import { Button } from "@/components/ui/button";
+import RecentPost from "../components/recent-post";
+import TagsBox from "../components/tags-box";
+import RelatedPosts from "./components/related-posts";
 
 function BlogPage({ params }: { params: { id: string } }) {
-  const { data } = useQuery({
-    queryKey: ["posts", params.id],
-    queryFn: () => getPostById(params.id),
-  });
-  const { data: posts } = useQuery({ queryKey: ["posts"], queryFn: getPosts });
-  if (!data || !posts) {
-    return;
-  }
   return (
     <>
       <Header />
       <main>
-        <Title title={data.title} />
+        <Title params={params} />
         <section className='max-w-screen-xl px-4 py-20 mx-auto grid grid-cols-3 gap-10'>
-          <Blog post={data} />
+          <Blog params={params} />
           <div className='col-span-1 hidden md:block space-y-7'>
             <Input placeholder='Search Here' className='text-base h-12' />
             <Card className='bg-slate-100'>
@@ -47,8 +34,7 @@ function BlogPage({ params }: { params: { id: string } }) {
                 Recent Posts
               </CardHeader>
               <CardContent className='bg-white'>
-                <p className='pt-3'>Alerts</p>
-                <p className='pt-3'>Company News</p>
+                <RecentPost />
               </CardContent>
             </Card>
             <Card className='bg-slate-100'>
@@ -56,21 +42,7 @@ function BlogPage({ params }: { params: { id: string } }) {
                 Tags
               </CardHeader>
               <CardContent className='bg-white'>
-                <div className='pt-6 flex gap-3 flex-wrap'>
-                  <div className='px-3 py-2 bg-slate-100 rounded-lg'>
-                    Money Alerts
-                  </div>
-                  <div className='px-3 py-2 bg-slate-100 rounded-lg'>News</div>
-                  <div className='px-3 py-2 bg-slate-100 rounded-lg'>
-                    Technology
-                  </div>
-                  <div className='px-3 py-2 bg-slate-100 rounded-lg'>
-                    Crypto Currency
-                  </div>
-                  <div className='px-3 py-2 bg-slate-100 rounded-lg'>
-                    AML Outsourcing
-                  </div>
-                </div>
+                <TagsBox />
               </CardContent>
             </Card>
             <div className='p-12 bg-[#015EB9] text-center space-y-12 rounded-lg text-white'>
@@ -92,20 +64,7 @@ function BlogPage({ params }: { params: { id: string } }) {
               Related Posts
             </h1>
             <div className='grid lg:grid-cols-3 gap-4'>
-              {posts.slice(0, 4).map((post: any) => {
-                if (post.category === data.category) {
-                  return (
-                    <BlogCard
-                      imageUrl={post.imageUrl}
-                      title={post.title}
-                      author="Jonh Wick"
-                      date={format(new Date(post.date), 'dd MMM yyyy')}
-                      body={post.body}
-                      id={post.id}
-                    />
-                  );
-                }
-              })}
+              <RelatedPosts />
             </div>
           </div>
         </div>

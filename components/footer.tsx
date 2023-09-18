@@ -11,14 +11,14 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className='bg-[#063A78] text-white dark:bg-slate-700'>
-      <div className='mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8'>
+    <footer className='relative bg-[#063A78] text-white dark:bg-slate-700'>
+      <div className='relative mx-auto z-10 w-full max-w-screen-xl p-4 py-6 lg:py-8'>
         <div className='md:flex md:justify-between'>
           <div className='mb-6 md:mb-0'>
-            <a href='/' className='inline-flex items-center mb-6 bg-white'>
+            <a href='/' className='inline-flex items-center mb-6'>
               <img
-                src='/com-logo.png'
-                className='h-8 mr-3'
+                src='/comp-logo.png'
+                className='h-8 mr-3 mix-blend-lighten'
                 alt='Company Logo'
               />
             </a>
@@ -186,6 +186,7 @@ function Footer() {
           </div>
         </div>
       </div>
+      <div className="absolute hidden lg:block bg-no-repeat bottom-0 left-0 bg-right-bottom bg-[url('/footer.png')] w-full h-full"></div>
     </footer>
   );
 }

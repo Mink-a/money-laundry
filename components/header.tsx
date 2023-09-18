@@ -11,11 +11,18 @@ function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
   return (
-    <header>
-      <nav className='bg-white border-gray-200 dark:bg-gray-900'>
-        <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
+    <header className="">
+      <div className="bg-[#DFF6FF] text-sm">
+          <div className='max-w-screen-xl mx-auto flex items-center justify-between p-2 '>
+            <p>+959 7980 65880</p>
+            <p>UPDATES – Click Here for KBZ Money News Alerts – UPDATES</p>
+            <p>admin@kbzmoney.com</p>
+          </div>
+      </div>
+      <nav className='max-w-screen-xl mx-auto bg-white border-gray-200 dark:bg-gray-900'>
+        <div className=' flex flex-wrap items-center justify-between  p-4'>
           <a href='/' className='flex items-center'>
-            <img src='/com-logo.png' className='h-8 mr-3' alt='Comp Logo' />
+            <img src='/comp-logo.png' className='h-8 mr-3' alt='Comp Logo' />
           </a>
           <div className='flex md:order-2'>
             <div className={`mr-3 ${searchOpen ? "block" : "hidden"}`}>
