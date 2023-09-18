@@ -25,6 +25,7 @@ function LatestBlogs() {
       let date = format(new Date(post.date), "dd MMM yyyy");
       return (
         <BlogCard
+          key={post.id}
           imageUrl={post.imageUrl}
           title={post.title}
           author='Jonh Wick'

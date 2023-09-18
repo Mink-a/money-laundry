@@ -5,24 +5,31 @@ import { AlignRightIcon, SearchIcon } from "lucide-react";
 import { Input } from "./ui/input";
 
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 function Header() {
   const [searchOpen, setSearchOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
   return (
-    <header className="">
-      <div className="bg-[#DFF6FF] text-sm">
-          <div className='max-w-screen-xl mx-auto flex items-center justify-between p-2 '>
-            <p>+959 7980 65880</p>
-            <p>UPDATES – Click Here for KBZ Money News Alerts – UPDATES</p>
-            <p>admin@kbzmoney.com</p>
-          </div>
+    <header className=''>
+      <div className='bg-[#DFF6FF] text-sm'>
+        <div className='max-w-screen-xl mx-auto flex items-center justify-between p-2 '>
+          <p>+959 7980 65880</p>
+          <p>UPDATES – Click Here for KBZ Money News Alerts – UPDATES</p>
+          <p>admin@kbzmoney.com</p>
+        </div>
       </div>
       <nav className='max-w-screen-xl mx-auto bg-white border-gray-200 dark:bg-gray-900'>
         <div className=' flex flex-wrap items-center justify-between  p-4'>
           <a href='/' className='flex items-center'>
-            <img src='/comp-logo.png' className='h-8 mr-3' alt='Comp Logo' />
+            <Image
+              height={50}
+              width={50}
+              src='/comp-logo.png'
+              className='h-8 mr-3'
+              alt='Comp Logo'
+            />
           </a>
           <div className='flex md:order-2'>
             <div className={`mr-3 ${searchOpen ? "block" : "hidden"}`}>

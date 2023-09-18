@@ -18,7 +18,7 @@ function TagsBox() {
   ] as unknown as string[];
 
   const tags = tagsArray.map((tag) => {
-    return <div className='px-3 py-2 bg-slate-100 rounded-lg'>{tag}</div>;
+    return <div key={tag} className='px-3 py-2 bg-slate-100 rounded-lg'>{tag}</div>;
   });
   return <div className='pt-6 flex gap-3 flex-wrap'>{tags}</div>;
 }

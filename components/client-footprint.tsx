@@ -16,7 +16,7 @@ function ClientFootprint() {
         <p className='leading-loose mb-3'>
           Rhoncus mattis rhoncus urna neque viverra justo nec. Magna etiam
           tempor orci eu. Praesent semper feugiat nibh sed pulvinar proin
-          gravida hendrerit lectus. Cicero's De Finibus Bonorum et Malorum for
+          gravida hendrerit lectus. Cicero&apos;s De Finibus Bonorum et Malorum for
           use in a type specimen book.
         </p>
       </div>

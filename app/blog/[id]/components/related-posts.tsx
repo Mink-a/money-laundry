@@ -16,6 +16,7 @@ function RelatedPosts() {
   const posts = data.map((post: any) => {
     return (
       <BlogCard
+        key={post.id}
         imageUrl={post.imageUrl}
         title={post.title}
         author='Jonh Wick'

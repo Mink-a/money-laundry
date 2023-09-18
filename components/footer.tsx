@@ -7,6 +7,7 @@ import {
   SendIcon,
   TwitterIcon,
 } from "lucide-react";
+import Image from "next/image";
 import React from "react";
 
 function Footer() {
@@ -16,7 +17,9 @@ function Footer() {
         <div className='md:flex md:justify-between'>
           <div className='mb-6 md:mb-0'>
             <a href='/' className='inline-flex items-center mb-6'>
-              <img
+              <Image
+                width={50}
+                height={50}
                 src='/comp-logo.png'
                 className='h-8 mr-3 mix-blend-lighten'
                 alt='Company Logo'
@@ -52,26 +55,17 @@ function Footer() {
                   </a>
                 </li>
                 <li className='mb-4'>
-                  <a
-                    href='#'
-                    className='hover:underline'
-                  >
+                  <a href='#' className='hover:underline'>
                     Services
                   </a>
                 </li>
                 <li className='mb-4'>
-                  <a
-                    href='#'
-                    className='hover:underline'
-                  >
+                  <a href='#' className='hover:underline'>
                     AML Technology
                   </a>
                 </li>
                 <li className='mb-4'>
-                  <a
-                    href='#'
-                    className='hover:underline'
-                  >
+                  <a href='#' className='hover:underline'>
                     Crypto Currencies
                   </a>
                 </li>
@@ -83,34 +77,22 @@ function Footer() {
               </h2>
               <ul className='text-white dark:text-gray-400 font-medium'>
                 <li className='mb-4'>
-                  <a
-                    href='#'
-                    className='hover:underline '
-                  >
+                  <a href='#' className='hover:underline '>
                     Contact
                   </a>
                 </li>
                 <li className='mb-4'>
-                  <a
-                    href='#'
-                    className='hover:underline '
-                  >
+                  <a href='#' className='hover:underline '>
                     About Us
                   </a>
                 </li>
                 <li className='mb-4'>
-                  <a
-                    href='#'
-                    className='hover:underline '
-                  >
+                  <a href='#' className='hover:underline '>
                     Client Support
                   </a>
                 </li>
                 <li className='mb-4'>
-                  <a
-                    href='#'
-                    className='hover:underline '
-                  >
+                  <a href='#' className='hover:underline '>
                     Optima Alerts
                   </a>
                 </li>

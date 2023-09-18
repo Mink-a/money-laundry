@@ -15,7 +15,7 @@ function RecentPost() {
   }
   const posts = data?.slice(0, 4).map((post: any) => {
     return (
-      <div className='flex flex-row items-center gap-3 pt-3'>
+      <div key={post.id} className='flex flex-row items-center gap-3 pt-3'>
         <Image
           className='rounded-full bg-sky-400 w-12 h-12'
           src={post.imageUrl}
