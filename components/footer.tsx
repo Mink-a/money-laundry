@@ -27,18 +27,18 @@ function Footer() {
             </a>
             <div className='max-w-md space-y-4'>
               <div className='flex'>
-                <MapPinIcon className='w-6 h-6 mr-3' />
+                <MapPinIcon className='w-6 h-6 mr-3 text-[#FFB547]' />
                 <p className=''>
                   Address: 1250 Capital of Texas Hwy, South building 3, Suite
                   400, Austin, TX 78746
                 </p>
               </div>
               <div className='flex'>
-                <SendIcon className='w-4 h-5 mr-3' />
+                <SendIcon className='w-4 h-5 mr-3 text-[#FFB547]' />
                 <p className=''>Support: OCGAdmin@optimacompass.com</p>
               </div>
               <div className='flex'>
-                <PhoneIcon className='w-4 h-5 mr-3' />
+                <PhoneIcon className='w-4 h-5 mr-3 text-[#FFB547]' />
                 <p className=''>Hotline: +1 512 329-5114</p>
               </div>
             </div>
@@ -127,40 +127,40 @@ function Footer() {
             </div>
           </div>
         </div>
-        <hr className='my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8' />
+        <hr className='my-2 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-6' />
         <div className='sm:flex sm:items-center sm:justify-between'>
           <span className='text-sm text-white sm:text-center dark:text-gray-400'>
             © 2023{" "}
-            <a href='https://flowbite.com/' className='hover:underline'>
-              Optima Compass
+            <a href='/' className='hover:underline text-[#FFB547]'>
+              KBZ Money
             </a>
             . All Rights Reserved.
           </span>
-          <div className='flex mt-4 space-x-5 sm:justify-center sm:mt-0'>
+          <div className='flex space-x-5 sm:justify-center mt-0'>
             <a
               href='#'
-              className='text-white hover:text-gray-900 dark:hover:text-white'
+              className='text-white p-3 rounded-full hover:bg-[#FFB547] dark:hover:text-white'
             >
               <FacebookIcon className='w-4 h-4' />
               <span className='sr-only'>Facebook page</span>
             </a>
             <a
               href='#'
-              className='text-white hover:text-gray-900 dark:hover:text-white'
+              className='text-white p-3 rounded-full hover:bg-[#FFB547] dark:hover:text-white'
             >
               <LinkedinIcon className='w-4 h-4' />
               <span className='sr-only'>LinkdedIn</span>
             </a>
             <a
               href='#'
-              className='text-white hover:text-gray-900 dark:hover:text-white'
+              className='text-white p-3 rounded-full hover:bg-[#FFB547] dark:hover:text-white'
             >
               <InstagramIcon className='w-4 h-4' />
               <span className='sr-only'>Instagram page</span>
             </a>
             <a
               href='#'
-              className='text-white hover:text-gray-900 dark:hover:text-white'
+              className='text-white p-3 rounded-full hover:bg-[#FFB547] dark:hover:text-white'
             >
               <TwitterIcon className='w-4 h-4' />
               <span className='sr-only'>Twitter Page</span>
