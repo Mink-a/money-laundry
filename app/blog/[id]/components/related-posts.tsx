@@ -16,13 +16,13 @@ function RelatedPosts() {
   const posts = data.map((post: any) => {
     return (
       <BlogCard
-        key={post.id}
+        key={post._id}
         imageUrl={post.imageUrl}
         title={post.title}
-        author='Jonh Wick'
+        author="Jonh Wick"
         date={format(new Date(post.date), "dd MMM yyyy")}
         body={post.body}
-        id={post.id}
+        id={post._id}
       />
     );
   });
