@@ -35,13 +35,13 @@ function ProductCarousel() {
         let date = format(new Date(post.date), "dd MMM yyyy");
         return (
           <BlogCard
-            key={post.id}
+            key={post._id}
             imageUrl={post.imageUrl}
             title={post.title}
-            author='John Wick'
+            author="John Wick"
             date={date}
             body={post.body}
-            id={post.id}
+            id={post._id}
           />
         );
       })}

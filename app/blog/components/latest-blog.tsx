@@ -5,7 +5,6 @@ import { getPostsByPaginate } from "@/lib/api";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import format from "date-fns/format";
 import { MoveRight } from "lucide-react";
-import React from "react";
 
 function LatestBlogs() {
   const { data, isLoading, fetchNextPage, hasNextPage, isFetchingNextPage } =
@@ -16,7 +15,7 @@ function LatestBlogs() {
     });
 
   if (isLoading) {
-    return <p>Loading...</p>;
+    return <p>Loading more...</p>;
   }
 
   const blogs = data?.pages
@@ -25,22 +24,22 @@ function LatestBlogs() {
       let date = format(new Date(post.date), "dd MMM yyyy");
       return (
         <BlogCard
-          key={post.id}
+          key={post._id}
           imageUrl={post.imageUrl}
           title={post.title}
-          author='Jonh Wick'
+          author="Jonh Wick"
           date={date}
           body={post.body}
-          id={post.id}
+          id={post._id}
         />
       );
     });
   return (
     <>
-      <div className='flex gap-4'>
-        <div className='flex flex-wrap gap-3'>{blogs}</div>
+      <div className="flex gap-4">
+        <div className="flex flex-wrap gap-3">{blogs}</div>
       </div>
-      <div className='text-center'>
+      <div className="text-center">
         <Button
           onClick={() => fetchNextPage()}
           disabled={!hasNextPage || isFetchingNextPage}
@@ -50,7 +49,7 @@ function LatestBlogs() {
             : hasNextPage
             ? "Load More"
             : "Nothing more to load"}{" "}
-          <MoveRight className='ml-2 h-4 w-4' />
+          <MoveRight className="ml-2 h-4 w-4" />
         </Button>
       </div>
     </>

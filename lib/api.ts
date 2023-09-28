@@ -1,26 +1,26 @@
 import axios from "axios";
 
+const BASE_URL = "http://localhost:7070/api/v1/posts";
+
 export async function getPosts() {
-  const res = await fetch("https://6p5gy6-4000.csb.app/posts");
+  const res = await fetch(`${BASE_URL}/`);
   return res.json();
 }
 
 export async function getPostById(id: string) {
-  const res = await fetch(`https://6p5gy6-4000.csb.app/posts/${id}`);
+  const res = await fetch(`${BASE_URL}/${id}`);
   return res.json();
 }
 
-export function getPostsByPaginate(page: number) {
-  return axios
-    .get("https://6p5gy6-4000.csb.app/posts", {
-      params: { _page: page, _sort: "title", _limit: 2 },
-    })
-    .then((res) => {
-      const hasNext = page * 2 <= parseInt(res.headers["x-total-count"]);
-      return {
-        nextPage: hasNext ? page + 1 : undefined,
-        previousPage: page > 1 ? page - 1 : undefined,
-        posts: res.data,
-      };
-    });
+export async function getPostsByPaginate(pageParam: number) {
+  const res = await axios.get(`${BASE_URL}?page=${pageParam}&perPage=2`);
+  // You may also want to include error handling here.
+
+  const hasNext = res.data.length > 0; // Check if there are more items
+
+  return {
+    nextPage: hasNext ? pageParam + 1 : undefined,
+    previousPage: pageParam > 1 ? pageParam - 1 : undefined,
+    posts: res.data,
+  };
 }
