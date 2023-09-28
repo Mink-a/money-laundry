@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:7070/api/v1/posts";
+const BASE_URL = "https://landing-backend-alpha.vercel.app/api/v1/posts";
 
 export async function getPosts() {
   const res = await fetch(`${BASE_URL}/`);
